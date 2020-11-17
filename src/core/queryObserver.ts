@@ -310,6 +310,8 @@ export class QueryObserver<TResult, TError> {
       query = config.queryCache.createQuery(config)
     }
 
+    query.config = config
+
     if (query === prevQuery) {
       return
     }
